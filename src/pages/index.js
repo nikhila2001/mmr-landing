@@ -32,12 +32,12 @@ export default function Marketing() {
         <HeroSection/>
         <ServiceSection/>
         <FeatureSection/>
-        <ContentSectionOne/>
-        <ContentSectionTwo/>
+        {/* <ContentSectionOne/>
+        <ContentSectionTwo/> */}
         <TestimonialSection/>
         <CounterSection/>
         <CtaSection/>
-        <FooterOne/>
+        {/* <FooterOne/> */}
       </PageWrapper>
   )
 }

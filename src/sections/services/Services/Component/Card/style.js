@@ -4,12 +4,12 @@ import { Box, Heading,Button,Paragraph } from '~styled';
 import {transparentize,rgba} from "polished"
 const propToColor = (arg = "#1787FC" ) => transparentize(0.70, arg);
 const Card = styled(Box).attrs({className:"service-card"})`
-    border: none;
-    padding-top: 35px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 51px;
-    margin-bottom: 25px;
+    border: 1px solid white;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    height:100%;
     border-radius: 15px;
     transition: 0.4s;
     display:flex;
@@ -18,16 +18,16 @@ const Card = styled(Box).attrs({className:"service-card"})`
     text-align:${props => props.itemCenter ? "center" : null};
     color:#25373f;
     @media (min-width:575px) {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     @media (min-width:768px) {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     @media (min-width:992px) {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     &:hover{
@@ -40,34 +40,34 @@ Card.Icon = styled(Box)`
         max-width: 60px;
         min-height: 60px;
         max-height: 60px;
-        border-radius: 50%;
+        border-radius: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 20px;
         font-weight: 400;
         color: #fff;
-        margin-bottom: 30px;
+        margin-bottom: 16px;
         background:${props => props.background};
         box-shadow:  ${props => props.background ? "-12px 12px 50px " + rgba(props.background,.3): "none"};
         
 `
 Card.Title = styled(Heading)`
-        font-size: 21px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 600;
         letter-spacing: normal;
-        line-height: 30px;
-        color:inherit;
+        color:#1a1a2e;
+        margin-bottom:8px;
 
 `
 Card.Text = styled(Paragraph)`
         font-size: 15px;
         font-weight: 400;
         letter-spacing: normal;
-        line-height: 1.86666;
-        margin-bottom: 26px;
-        opacity:.7;
-        color:inherit;
+        line-height: 1.5;
+        opacity:.5;
+        color:#4a5565;
+        margin-bottom:0;
 `
 Card.Button = styled(Box)`
         font-size: 15px;

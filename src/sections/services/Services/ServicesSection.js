@@ -5,25 +5,25 @@ import Service from "./style"
 import { ServiceData } from "~data"
 export default function ServicesSection({ ...rest }) {
   return (
-    <Service backgroundColor="rgba(169, 210, 255, 0.1)" {...rest}>
-      <Container>
-        <Row className="justify-content-center">
-          <Col className="col-xxl-6 col-xl-7 col-md-9 col-sm-10">
+    <Service backgroundColor="" {...rest}>
+      <Container fluid>
+        <Row className="text-center">
+          <Col className="col-xxl-12 col-xl-7 col-md-9 col-sm-10">
             <Service.Box className="text-center" mb="30px" mbLG="55px">
               
-              <Service.Title as="h2">Complete Privacy, Absolute Control</Service.Title>
-              <Service.Subtitle as="h6" fontColor="#ff1e38">
+              <Service.Title as="h2">Complete Privacy, <span style={{ color:"#2b9fe8"}}>Absolute Control</span></Service.Title>
+              <Service.Subtitle as="h6" fontColor="#4a5565">
                 Your medical records are yours alone. No third-party access, no data sharing, no compromises.
               </Service.Subtitle>
             </Service.Box>
           </Col>
         </Row>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center gap-md-8 gap-6">
             {ServiceData.services.map(({ title, icon, text, id, iconBackground }) => {
               return (
                 <Col
                   xs="12"
-                  className="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 "
+                  className="col-xl-3 col-lg-6 col-md-6 col-sm-9 col-xs-10 "
                   key={id}
                 >
                 <ServicesCard
@@ -36,6 +36,9 @@ export default function ServicesSection({ ...rest }) {
               )
             })}
         </Row>
+        <div className="text-center " style={{ marginTop:"64px"}}>
+          <div className="d-inline-flex py-3 px-4 rounded-pill" style={{ backgroundColor:"#4caf501a", color: "#4caf50"}}>Certified secure by international security standards</div>
+        </div>
       </Container>
     </Service>
   )

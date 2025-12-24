@@ -1,65 +1,98 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import CountUp from "react-countup";
 import Counter from './style'
-import LazyLoad from "react-lazyload";
-import { SuperTag } from "~components";
+import { Container, Row, Col } from "react-bootstrap";
+import {
+  ComparisonWrapper,
+  TableBox,
+  HeaderCell,
+  FeatureCell,
+  ValueCell,
+  Pill,
+  CheckIcon,
+  CrossIcon
+} from './style';
 
-export default function CounterSection() {
+const ComparisonTable = () => {
   return (
-      <Counter>
-        <Container>
-            <Row className="row justify-content-center text-center">
-              <Col xs="6" className="col-6 col-lg-3 col-md-4 col-xs-6">
-                <LazyLoad>
-                  <Counter.Single>
-                    <Counter.Title as="h3" fontColor="#2b59ff">
-                      <CountUp className="counter" start={0} end={15} duration={2.75}/>M
-                    </Counter.Title>
-                    <Counter.Text>
-                      <SuperTag value="New visitors <br className='d-none d-xs-block' /> every month. "/>
-                    </Counter.Text>
-                  </Counter.Single>
-                </LazyLoad>
-              </Col>
-              <Col xs="6" className="col-6 col-lg-3 col-md-4 col-xs-6">
-                <LazyLoad>
-                  <Counter.Single>
-                    <Counter.Title as="h3" fontColor="#ff5722">
-                    <CountUp className="counter" start={0} end={49} duration={2.75}/>%
-                    </Counter.Title>
-                    <Counter.Text>
-                      <SuperTag value="Extra conversion<br className='d-none d-xs-block' /> on any niche."/>
-                    </Counter.Text>
-                  </Counter.Single>
-                </LazyLoad>
-              </Col>
-              <Col xs="6" className="col-6 col-lg-3 col-md-4 col-xs-6">
-                <LazyLoad>
-                  <Counter.Single>
-                    <Counter.Title as="h3" fontColor="#22cc74">
-                     $<CountUp className="counter" start={0} end={2} duration={2.75}/>M
-                    </Counter.Title>
-                    <Counter.Text>
-                      <SuperTag value="Extra saved by <br className='d-none d-xs-block' /> customers."/>
-                    </Counter.Text>
-                  </Counter.Single>
-                </LazyLoad>
-              </Col>
-              <Col xs="6" className="col-6 col-lg-3 col-md-4 col-xs-6">
-                <LazyLoad>
-                  <Counter.Single>
-                    <Counter.Title as="h3" fontColor="#ff971d">
-                      <span className="counter">93</span>%
-                    </Counter.Title>
-                    <Counter.Text>
-                      <SuperTag value="Success rate on <br className='d-none d-xs-block' /> last 05 years."/>
-                    </Counter.Text>
-                  </Counter.Single>
-                </LazyLoad>
-              </Col>
-            </Row>
-        </Container>
-      </Counter>
-  )
-}
+    <ComparisonWrapper>
+      <Container>
+        <TableBox>
+          {/* Header Row */}
+          <Row className="table-row header-row">
+            <HeaderCell className="col-3">Feature</HeaderCell>
+
+            <HeaderCell className="col-3">
+              MMR
+              <Pill>Privacy First</Pill>
+            </HeaderCell>
+
+            <HeaderCell className="col-3">ABHA-linked Apps</HeaderCell>
+            <HeaderCell className="col-3">Paper Records</HeaderCell>
+          </Row>
+
+          {/* ---------------- TABLE ROWS ---------------- */}
+
+          {/* 1 */}
+          <Row className="table-row">
+            <FeatureCell className="col-3">Data Privacy</FeatureCell>
+            <ValueCell className="col-3">
+              <CheckIcon /> Complete – You own your data
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CrossIcon /> Limited – Government access
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CheckIcon /> Complete – Physical control
+            </ValueCell>
+          </Row>
+
+          {/* 2 */}
+          <Row className="table-row">
+            <FeatureCell className="col-3">Government Access</FeatureCell>
+            <ValueCell className="col-3">
+              <CrossIcon /> No access
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CheckIcon /> Full access through ABDM
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CrossIcon /> No access
+            </ValueCell>
+          </Row>
+
+          {/* 3 */}
+          <Row className="table-row">
+            <FeatureCell className="col-3">Insurance Visibility</FeatureCell>
+            <ValueCell className="col-3">
+              <CrossIcon /> No visibility
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CheckIcon /> Potential access
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CrossIcon /> No visibility
+            </ValueCell>
+          </Row>
+
+          {/* 4 */}
+          <Row className="table-row">
+            <FeatureCell className="col-3">Offline Access</FeatureCell>
+            <ValueCell className="col-3">
+              <CheckIcon /> Yes – Anytime
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CrossIcon /> Requires internet
+            </ValueCell>
+            <ValueCell className="col-3">
+              <CheckIcon /> Yes – If available
+            </ValueCell>
+          </Row>
+
+          {/* Continue similarly for all rows... */}
+        </TableBox>
+      </Container>
+    </ComparisonWrapper>
+  );
+};
+
+export default ComparisonTable;

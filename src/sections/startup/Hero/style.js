@@ -44,18 +44,24 @@ Hero.Title = styled(Heading)`
   }
 
   @media (min-width: 992px) {
-    font-size: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
   }
 `;
 Hero.Text = styled(Paragraph)`
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 30px;
+  line-height: 1.1;
   margin-bottom: 0;
+  color: #4a5565;
+  max-width: 36rem;
+
 `;
 
 Hero.Buttons = styled(Box)`
+   gap:8px;
   .btn {
     margin-right: 18px;
   }
@@ -94,8 +100,19 @@ Hero.Button = styled(Button)`
   height: 50px;
   font-size: 14px;
   transition: 0.4s;
-  border-radius: 500px !important;
+  border-radius: 14px;
+  &.btn-2 {
+  color:#2b9fe8;
+  border-radius: 14px;
+  border: 2px solid #2b9fe8;
+  &:hover {
+  background-color: #2b9fe8;
+  color:#fff;
+  }
+  }
   &.btn-1 {
+   background-color: rgb(255 107 106) !important;
+   color:#fff;
     box-shadow: -12px 12px 50px rgb(96 1 211 / 30%) !important;
     &:hover {
       box-shadow: -12px 12px 50px rgb(96 1 211 / 0%) !important;
@@ -125,5 +142,16 @@ height: 700px;
     }
   }
 `;
+
+Hero.Footer = styled(Paragraph)`
+display:flex;
+flex-wrap: wrap;
+gap: 24px;
+padding-top: 16px;
+color: #364153;
+font-size:14px;
+line-height:1.4;
+
+`
 
 export default Hero;

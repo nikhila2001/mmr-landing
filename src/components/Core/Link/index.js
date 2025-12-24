@@ -4,7 +4,7 @@ import  Link  from "next/link"
 
 const LinkComponent = ({children,to,...rest}) => {
   return <>
-    <Link href={to}>
+    <Link href={to} legacyBehavior>
         <a {...rest}>
           {children}
         </a>

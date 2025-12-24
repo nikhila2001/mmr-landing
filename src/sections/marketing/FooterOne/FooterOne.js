@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from '~components'
+import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 // import { Images } from '~data'
 import Footer from "./style"
@@ -14,7 +14,7 @@ return(
             <Footer.Widgets className="footer-widgets footer-widgets--l7">
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
-                    <Link  to="#">
+                    <Link  href="/" legacyBehavior>
                         <img src={LogoWhite.src} alt="logo" />
                     </Link>
                 </Footer.Box>
@@ -33,22 +33,22 @@ return(
                     <Footer.Title>Company</Footer.Title>
                     <Footer.List>
                         <Footer.ListItems>
-                            <Link to="/innerpage/about-us">About
+                            <Link  href="/innerpage/about-us" legacyBehavior>About
                             us</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/">Privacy
+                            <Link  href="/" legacyBehavior>Privacy
                             Policy</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/innerpage/terms">Terms &amp;
+                            <Link  href="/innerpage/terms" legacyBehavior>Terms &amp;
                             Conditions</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/innerpage/faq">Faq</Link>
+                            <Link  href="/innerpage/faq" legacyBehavior>Faq</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/innerpage/contact/contact-1">Contact</Link>
+                            <Link  href="/innerpage/contact/contact-1" legacyBehavior>Contact</Link>
                         </Footer.ListItems>
                     </Footer.List>
                 </Footer.Widgets>
@@ -58,19 +58,19 @@ return(
                     <Footer.Title>More Links</Footer.Title>
                     <Footer.List>
                         <Footer.ListItems>
-                            <Link to="/">News rooms</Link>
+                            <Link  href="/" legacyBehavior>News rooms</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/">Missions</Link>
+                            <Link  href="/" legacyBehavior>Missions</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/">Investors</Link>
+                            <Link  href="/" legacyBehavior>Investors</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/">Faq</Link>
+                            <Link  href="/" legacyBehavior>Faq</Link>
                         </Footer.ListItems>
                         <Footer.ListItems>
-                            <Link to="/innerpage/career">Careers</Link>
+                            <Link  href="/innerpage/career" legacyBehavior>Careers</Link>
                         </Footer.ListItems>
                     </Footer.List>
                 </Footer.Widgets>
@@ -87,7 +87,7 @@ return(
                             <Footer.AddressItem>
                                 <i className="fa fa-phone-alt" />
                                 
-                                <Link to="/">+31 62 19 22 705
+                                <Link  href="/" legacyBehavior>+31 62 19 22 705
                                 <span className="d-block"> 7 Days - 8am - 10pm </span> </Link>
                             </Footer.AddressItem>
                             <Footer.AddressItem>

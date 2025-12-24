@@ -15,26 +15,34 @@ export const HeaderButtonWrapper = styled(Box)`
     color: #1f2230;
     margin-right: 8px;
   }
-    .btn{
-        min-width:auto;
-        height: 42px;
-        border-radius: 3px;
-        color: var(--bs-white);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.2;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        padding-left:15px;
-        padding-right:15px;
-        letter-spacing: -0.4px;
-        color:#262729;
-        margin-left:10px;
-        &:hover {
+  .btn {
+    min-width: auto;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    color: #1f2230;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0 6px;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    letter-spacing: 0;
+
+    &:hover {
       color: #1a73e8;
       text-decoration: none;
     }
+
+    &.active {
+      color: #1a73e8;
+      font-weight: 500;
+    }
+  }
         &-2{
             min-width: 129px;
             height: 42px;
@@ -49,12 +57,12 @@ export const HeaderButtonWrapper = styled(Box)`
     margin: 0 4px;
   }
 `
-const HeaderButton = ({btnOneLink,btnTwoLink,btnOneText,btnTwoText,btnThreeText,...rest})=>{
-    return(
+const HeaderButton = ({ btnOneLink, btnTwoLink, btnOneText, btnTwoText, btnThreeText, ...rest }) => {
+    return (
         <HeaderButtonWrapper {...rest}>
-               <span className="lang-icon">
-        <i className="fa fa-globe" aria-hidden="true" />
-      </span>
+            <span className="lang-icon">
+                <i className="fa fa-globe" aria-hidden="true" />
+            </span>
             <Link target="_blank" className="btn" to={btnOneLink ? btnOneLink : "/"}>
                 {btnOneText}
             </Link>

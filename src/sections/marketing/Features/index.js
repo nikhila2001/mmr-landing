@@ -8,114 +8,155 @@ import Feature from "./style";
 // import featureShape1 from "image/marketing/l1-half-circle-shape.png";
 const FeatureSection = ({ ...rest }) => {
   return (
-    <Feature className="bg-blue-ribbon">
-      <Feature.Shapes>
-        <Feature.ShapeOne>
-          <img src="image/marketing/l1-half-circle-shape.png" alt="shape1" className="w-100"/>
-        </Feature.ShapeOne>
-        <Feature.ShapeTwo>
-          <img src="image/marketing/l1-full-circle-shape.png" alt="shape1" className="w-100"/>
-        </Feature.ShapeTwo> 
-      </Feature.Shapes>
-      
+    <Feature className="bg-blue-ribbon">  
       <Container>
         <Row>
-          <Col xs="auto" className="col-xl-8 col-lg-10">
-            <Feature.Box mb="35px" mbMD="80px" mbLG="148px">
-              <Feature.Title className="mb-5" as="h2" fontColor="#fff">
-                Best features available <br className="d-none d-xs-block" /> for
-                your social marketing.
+          <Col xs="auto" className="col-xl-12 col-lg-10">
+            <Feature.Box mb="64px" mbMD="80px" mbLG="148px">
+              <Feature.Title  fontColor="#1a1a2e">
+                Powerful Features for <span style={{ color:"#2b9fe8"}}>Better Health Management</span>
               </Feature.Title>
-              <Feature.Text className="mt-8" fontColor="#fff">
-                Create custom landing pages with Fastland that converts
-                <br className="d-none d-xs-block" /> more visitors than any
-                website. Easy &amp; Fast.
+              <Feature.Text >
+                Everything you need to manage your medical records efficiently and securely
               </Feature.Text>
             </Feature.Box>
           </Col>
         </Row>
-        <Tab.Container
-          id="left-tabs-example"
-          defaultActiveKey="first"
-        >
-          <Feature.Tab>
-            <Col className="col-xxl-3 col-lg-3 col-md-12 col-xs-10 col-12">
-              <Feature.TabNavWrapper className="nav row ms-0 me-0" as={Nav}>
-                <Nav.Link
-                  eventKey="first"
-                  className="nav-item col-lg-12 col-md-4 col-xs-6 col-8 me-md-0 me-lg-0"
-                >
-                  <TabNavWidget iconClass="fa fa-chart-pie" text="Analytics" className="nav-widget" mb="30px" mbLG="50px"/>
-                </Nav.Link>
-                <Nav.Link
-                  eventKey="second"
-                  className="col-lg-12 col-md-4 col-xs-6 col-8 me-md-0 me-lg-0"
-                >
-                   <TabNavWidget iconClass="far fa-flag" text="Advertisement" className="nav-widget" mb="30px" mbLG="50px"/>
-                </Nav.Link>
-                <Nav.Link
-                  eventKey="third"
-                  className="widget widget--feature nav-item col-lg-12 col-md-4 col-xs-6 col-8 me-md-0 me-lg-0"
-                >
-                  <TabNavWidget iconClass="fas fa-chart-line" text="Sales Report" className="nav-widget" mb="30px" mbLG="50px"/>
-                </Nav.Link>
-              </Feature.TabNavWrapper>
-            </Col>
-            <Col xs="auto" className="col-xxl-9 col-lg-9 col-md-12 col-sm-12">
-            <Tab.Content className="tab-content tab-content--feature">
-              <Tab.Pane eventKey="first">
-                <Row className="align-items-center">
-                  <Col
-                    className="col-md-6 col-sm-6 col-xs-9"
-                    xs="auto"
-                  >
-                    <TabContentWidget count="01." title="Real data access" text={'Create custom landing pages with<br class="d-none d-lg-block" /> Fastland that converts more visitors <br class="d-none d-lg-block" /> than any website.'}/>
-                  </Col>
-                  <Col
-                    className="col-md-6 col-sm-6 col-xs-9"
-                    xs="auto"
-                  >
-                    <TabContentWidget count="02." title="Daily email reports" text={'Create custom landing pages with<br class="d-none d-lg-block" /> Fastland that converts more visitors <br class="d-none d-lg-block" /> than any website.'}/>
-                  </Col>
-                </Row>
-              </Tab.Pane>
-              <Tab.Pane eventKey="second">
-                <Row>
-                  <Col
-                    className="col-md-6 col-sm-6 col-xs-9"
-                    xs="auto"
-                  >
-                    <TabContentWidget count="03." title="Real data access" text={'Create custom landing pages with<br class="d-none d-lg-block" /> Fastland that converts more visitors <br class="d-none d-lg-block" /> than any website.'}/>
-                  </Col>
-                  <Col
-                    className="col-md-6 col-sm-6 col-xs-9"
-                    xs="auto"
-                  >
-                    <TabContentWidget count="04." title="Data access real " text={'Create custom landing pages with<br class="d-none d-lg-block" /> Fastland that converts more visitors <br class="d-none d-lg-block" /> than any website.'}/>
-                  </Col>
-                </Row>
-              </Tab.Pane>
-              <Tab.Pane eventKey="third">
-                <Row>
-                  <Col
-                    className="col-md-6 col-sm-6 col-xs-9"
-                    xs="auto"
-                  >
-                    <TabContentWidget count="05." title="Real data access" text={'Create custom landing pages with<br class="d-none d-lg-block" /> Fastland that converts more visitors <br class="d-none d-lg-block" /> than any website.'}/>
-                  </Col>
-                  <Col
-                    className="col-md-6 col-sm-6 col-xs-9"
-                    xs="auto"
-                    
-                  >
-                    <TabContentWidget count="06." title="Real access data " text={'Create custom landing pages with<br class="d-none d-lg-block" /> Fastland that converts more visitors <br class="d-none d-lg-block" /> than any website.'}/>
-                  </Col>
-                </Row>
-              </Tab.Pane>
-            </Tab.Content>
+        <Row className="align-items-center justify-content-center" style={{ marginBottom: "90px" }}>
+          <Col
+            xs="12"
+            className="col-xl-6 col-lg-7 col-md-10 order-2 order-xl-1"
+          >
+            <Feature.Box mrXL="50px" mt="0" mtXL="0" pb="40px" pbLG="0">
+              <Feature.Icon as="div">
+                <i className="fa fa-file-invoice" />
+              </Feature.Icon>
+              <div style={{ color: "#2b9fe8", marginBottom: "8px", textAlign: "start" }}>Smart OCR</div>
+              <Feature.Title style={{ textAlign: "start", fontSize: "32px", fontWeight: "700", color: "#1a1a2e", lineHeight: "1.5" }}>
+                Upload Any Document - We Digitize It
+              </Feature.Title>
+              <Feature.Text style={{ textAlign: "start", color: "#4a5565", fontSize: "18px", lineHeight: "1.5" }}>
+                Take a photo of prescriptions, reports, or bills. Our AI instantly converts them to searchable digital records.
+              </Feature.Text>
+            </Feature.Box>
           </Col>
-          </Feature.Tab>
-        </Tab.Container>
+          <Col
+            xs="12"
+            className="col-xl-6 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2 d-flex justify-content-center"
+          >
+            <div
+              className="position-relative rounded-5 shadow-lg overflow-hidden bg-white"
+              style={{ maxWidth: "520px", borderRadius: "24px" }}
+            >
+              <img
+                src="/image/movingMobile.jfif"
+                alt="content"
+                className="img-fluid w-100 h-100 object-fit-cover d-block"
+                style={{ height: "400px" }}
+              />
+            </div>
+          </Col>
+        </Row>
+         
+        <Row className="align-items-center justify-content-center flex-row-reverse" style={{ marginBottom:"90px"}}>
+          <Col
+            xs="12"
+            className="col-xl-5 col-lg-7 col-md-10 order-2 order-xl-1"
+          >
+            <Feature.Box mrXL="50px" mt="0" mtXL="0" pb="40px" pbLG="0">
+              <Feature.Icon as="div">
+                <i className="fa fa-file-invoice" />
+              </Feature.Icon>
+              <div style={{ color: "#2b9fe8", marginBottom: "8px", textAlign: "start" }}>Smart OCR</div>
+              <Feature.Title style={{ textAlign: "start", fontSize: "32px", fontWeight: "700", color: "#1a1a2e", lineHeight: "1.5" }}>
+                Upload Any Document - We Digitize It
+              </Feature.Title>
+              <Feature.Text style={{ textAlign: "start", color: "#4a5565", fontSize: "18px", lineHeight: "1.5" }}>
+                Take a photo of prescriptions, reports, or bills. Our AI instantly converts them to searchable digital records.
+              </Feature.Text>
+            </Feature.Box>
+          </Col>
+          <Col
+            xs="12"
+            className="col-xl-7 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2"
+          >
+            <div className="position-relative">
+              <div className="position-relative rounded-5 shadow-lg overflow-hidden" style={{ maxWidth: "520px", borderRadius:"24px" }} >
+                <img src="/image/movingMobile.jfif" alt="content" className="w-100 object-fit-cover rounded-5 " style={{ height: "400px" }} />
+
+              </div>
+
+            </div>
+          </Col>
+        </Row>
+
+         <Row className="align-items-center justify-content-center" style={{ marginBottom: "90px" }}>
+          <Col
+            xs="12"
+            className="col-xl-6 col-lg-7 col-md-10 order-2 order-xl-1"
+          >
+            <Feature.Box mrXL="50px" mt="0" mtXL="0" pb="40px" pbLG="0">
+              <Feature.Icon as="div">
+                <i className="fa fa-file-invoice" />
+              </Feature.Icon>
+              <div style={{ color: "#2b9fe8", marginBottom: "8px", textAlign: "start" }}>Smart OCR</div>
+              <Feature.Title style={{ textAlign: "start", fontSize: "32px", fontWeight: "700", color: "#1a1a2e", lineHeight: "1.5" }}>
+                Upload Any Document - We Digitize It
+              </Feature.Title>
+              <Feature.Text style={{ textAlign: "start", color: "#4a5565", fontSize: "18px", lineHeight: "1.5" }}>
+                Take a photo of prescriptions, reports, or bills. Our AI instantly converts them to searchable digital records.
+              </Feature.Text>
+            </Feature.Box>
+          </Col>
+          <Col
+            xs="12"
+            className="col-xl-6 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2 d-flex justify-content-center"
+          >
+            <Feature.Wrapper
+              className="position-relative rounded-5 shadow-lg overflow-hidden bg-white"
+              style={{ maxWidth: "520px", borderRadius: "24px" }}
+            >
+              <Feature.Image
+                src="/image/movingMobile.jfif"
+                alt="content"
+                className="img-fluid w-100 h-100 object-fit-cover d-block"
+                style={{ height: "400px" }}
+              />
+            </Feature.Wrapper>
+          </Col>
+        </Row>
+
+          <Row className="align-items-center justify-content-center flex-row-reverse" style={{ marginBottom:"90px"}}>
+          <Col
+            xs="12"
+            className="col-xl-5 col-lg-7 col-md-10 order-2 order-xl-1"
+          >
+            <Feature.Box mrXL="50px" mt="0" mtXL="0" pb="40px" pbLG="0">
+              <Feature.Icon as="div">
+                <i className="fa fa-file-invoice" />
+              </Feature.Icon>
+              <div style={{ color: "#2b9fe8", marginBottom: "8px", textAlign: "start" }}>Smart OCR</div>
+              <Feature.Title style={{ textAlign: "start", fontSize: "32px", fontWeight: "700", color: "#1a1a2e", lineHeight: "1.5" }}>
+                Upload Any Document - We Digitize It
+              </Feature.Title>
+              <Feature.Text style={{ textAlign: "start", color: "#4a5565", fontSize: "18px", lineHeight: "1.5" }}>
+                Take a photo of prescriptions, reports, or bills. Our AI instantly converts them to searchable digital records.
+              </Feature.Text>
+            </Feature.Box>
+          </Col>
+          <Col
+            xs="12"
+            className="col-xl-7 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2"
+          >
+            <div className="position-relative">
+              <div className="position-relative rounded-5 shadow-lg overflow-hidden" style={{ maxWidth: "520px", borderRadius:"24px" }} >
+                <img src="/image/movingMobile.jfif" alt="content" className="w-100 object-fit-cover rounded-5 " style={{ height: "400px" }} />
+
+              </div>
+
+            </div>
+          </Col>
+        </Row>
       </Container>
     </Feature>
   )
