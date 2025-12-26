@@ -7,9 +7,11 @@ import ContentSectionOne from "~sections/marketing/ContentOne"
 import ContentSectionTwo from "~sections/marketing/ContentTwo"
 import TestimonialSection from "~sections/app/Testimonial/TestimonialSection"
 import CounterSection from "~sections/marketing/Counter"
+import ProcessSection from "~sections/it/Process/ProcessSection"
 import CtaSection from "~sections/marketing/Cta"
 import FooterOne from "~sections/marketing/FooterOne"
 import HeaderButton from "~sections/marketing/Header"
+import ContactSection from "~sections/marketing/ContactSection/ContactSection"
 const header = {
   headerClasses: "site-header site-header--menu-start light-header site-header--sticky",
   containerFluid:true,
@@ -36,8 +38,9 @@ export default function Marketing() {
         <ContentSectionTwo/> */}
         <TestimonialSection/>
         <CounterSection/>
-        <CtaSection/>
-        {/* <FooterOne/> */}
+        <ProcessSection/>
+        <ContactSection />
+        <FooterOne/>
       </PageWrapper>
   )
 }

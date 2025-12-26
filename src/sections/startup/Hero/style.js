@@ -2,21 +2,17 @@ import styled from "styled-components";
 import { Box, Heading, Button, Paragraph, Image } from "~styled";
 
 const Hero = styled(Box)`
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 96px;
+  padding-bottom: 64px;
   background-size: cover;
   background-position: right top;
   position: relative;
   z-index: 2;
   @media (min-width: 768px) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 128px;
+    padding-bottom: 96px;
   }
 
-  @media (min-width: 992px) {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
 `;
 
 Hero.Content = styled(Box)``;
@@ -54,14 +50,17 @@ Hero.Text = styled(Paragraph)`
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.1;
-  margin-bottom: 0;
+  margin-bottom: 32px;
   color: #4a5565;
   max-width: 36rem;
 
 `;
 
 Hero.Buttons = styled(Box)`
-   gap:8px;
+   display:flex;
+   gap:16px;
+   margin-bottom:32px !important;
+   
   .btn {
     margin-right: 18px;
   }
@@ -111,12 +110,20 @@ Hero.Button = styled(Button)`
   }
   }
   &.btn-1 {
-   background-color: rgb(255 107 106) !important;
-   color:#fff;
-    box-shadow: -12px 12px 50px rgb(96 1 211 / 30%) !important;
-    &:hover {
-      box-shadow: -12px 12px 50px rgb(96 1 211 / 0%) !important;
-    }
+cursor:pointer;
+padding: 16px 32px 16px 32px;
+background-color:#ff6b6b;
+color:white;
+width: fit-content;
+border-radius:14px;
+opacity: 1;
+transition: background-color 0.3s ease, box-shadow 0.3s ease;
+box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 
+              0 4px 6px -4px rgba(0,0,0,0.1); 
+&:hover{
+ background-color: #FF5252;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
   }
   @media (min-width: 576px) {
     min-width: 180px;

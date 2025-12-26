@@ -3,6 +3,8 @@ import { Col, Container, Row } from "react-bootstrap"
 import ServicesCard from "./Component/Card"
 import Service from "./style"
 import { ServiceData } from "~data"
+import { MdOutlineShield } from "react-icons/md";
+
 export default function ServicesSection({ ...rest }) {
   return (
     <Service backgroundColor="" {...rest}>
@@ -19,7 +21,7 @@ export default function ServicesSection({ ...rest }) {
           </Col>
         </Row>
         <Row className="justify-content-center gap-md-8 gap-6">
-            {ServiceData.services.map(({ title, icon, text, id, iconBackground }) => {
+            {ServiceData.services.map(({ title, icon, text, id, iconBackground , shadowColor}) => {
               return (
                 <Col
                   xs="12"
@@ -37,7 +39,9 @@ export default function ServicesSection({ ...rest }) {
             })}
         </Row>
         <div className="text-center " style={{ marginTop:"64px"}}>
-          <div className="d-inline-flex py-3 px-4 rounded-pill" style={{ backgroundColor:"#4caf501a", color: "#4caf50"}}>Certified secure by international security standards</div>
+          <div className="d-inline-flex py-3 px-4 rounded-pill gap-1 align-items-center" style={{ backgroundColor:"#4caf501a", color: "#4caf50"}}>
+            <span><MdOutlineShield size={20}/></span>
+            Certified secure by international security standards</div>
         </div>
       </Container>
     </Service>

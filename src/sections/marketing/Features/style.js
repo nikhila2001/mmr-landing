@@ -63,6 +63,7 @@ Feature.Text = styled(Paragraph)`
     letter-spacing: normal;
     line-height: 1.5;
     opacity:.7;
+    margin-bottom:0;
     @media (min-width:992px) {
         font-size: 16px;
     }
