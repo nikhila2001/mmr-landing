@@ -1,136 +1,3 @@
-// import React from 'react'
-// import Link from 'next/link'
-// import { Container, Row, Col } from 'react-bootstrap'
-// // import { Images } from '~data'
-// import Footer from "./style"
-// import LogoWhite from "~image/logo/logo-white.png";
-// export default function FooterOne(){
-// return(
-//     <Footer backgroundColor="#6a26da">
-//     <Container>
-//         <Footer.Box pbXL="95px">
-//         <Row>
-//             <Col xs="12" className="col-lg-4 col-md-8 col-xs-10">
-//             <Footer.Widgets className="footer-widgets footer-widgets--l7">
-//                 {/* Brand Logo*/}
-//                 <Footer.Box mb="30px">
-//                     <Link  href="/" legacyBehavior>
-//                         <img src={LogoWhite.src} alt="logo" />
-//                     </Link>
-//                 </Footer.Box>
-//                 <Footer.Text mb="36px">
-//                 The best medicines & biggest<br className="d-none d-xl-block" />
-//                 brands within 30 minutes at your<br className="d-none d-xl-block" />home. Experience the power of<br className="d-none d-xl-block" />
-//                 MedCartel today.</Footer.Text>
-
-//             </Footer.Widgets>
-//             </Col>
-//             <Col xs="12" className="col-xl-8">
-//             <Row>
-
-//                 <Col xs="6" className="col-md-4 col-xs-6">
-//                 <Footer.Widgets>
-//                     <Footer.Title>Company</Footer.Title>
-//                     <Footer.List>
-//                         <Footer.ListItems>
-//                             <Link  href="/innerpage/about-us" legacyBehavior>About
-//                             us</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/" legacyBehavior>Privacy
-//                             Policy</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/innerpage/terms" legacyBehavior>Terms &amp;
-//                             Conditions</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/innerpage/faq" legacyBehavior>Faq</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/innerpage/contact/contact-1" legacyBehavior>Contact</Link>
-//                         </Footer.ListItems>
-//                     </Footer.List>
-//                 </Footer.Widgets>
-//                 </Col>
-//                 <Col xs="6" className="col-md-4 col-xs-6">
-//                 <Footer.Widgets>
-//                     <Footer.Title>More Links</Footer.Title>
-//                     <Footer.List>
-//                         <Footer.ListItems>
-//                             <Link  href="/" legacyBehavior>News rooms</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/" legacyBehavior>Missions</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/" legacyBehavior>Investors</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/" legacyBehavior>Faq</Link>
-//                         </Footer.ListItems>
-//                         <Footer.ListItems>
-//                             <Link  href="/innerpage/career" legacyBehavior>Careers</Link>
-//                         </Footer.ListItems>
-//                     </Footer.List>
-//                 </Footer.Widgets>
-//                 </Col>
-//                 <Col xs="12" className="col-md-4 col-xs-6">
-//                     <Footer.Widgets>
-//                         <Footer.Title>Contact Details</Footer.Title>
-//                         <Footer.Address className="widgets-address">
-//                             <Footer.AddressItem>
-//                                 <i className="fa fa-map-marker-alt" />
-//                                 <span>Amsterdam <br className="d-block" />
-//                                 Netherlands</span>
-//                             </Footer.AddressItem>
-//                             <Footer.AddressItem>
-//                                 <i className="fa fa-phone-alt" />
-                                
-//                                 <Link  href="/" legacyBehavior>+31 62 19 22 705</Link>
-//                                  {/* <span className="d-block"> 7 Days - 8am - 10pm </span> */}
-//                             </Footer.AddressItem>
-//                             <Footer.AddressItem>
-//                                 <i className="fa fa-envelope" />
-//                                 <a href="mailto:info@medcartel.com">info@medcartel.com</a>
-//                             </Footer.AddressItem>
-//                         </Footer.Address>
-//                     </Footer.Widgets>
-//                 </Col>
-
-//             </Row>
-//             </Col>
-//         </Row>
-//         </Footer.Box>
-//         <Footer.Copyright>
-//         <Footer.CopyrightText>© 2021 Fastland By FinestDevs. All Rights Reserved</Footer.CopyrightText>
-//         <Footer.SocialShare>
-//             <Footer.SocialShareItem>
-//                 <a target="_blank" href="https://www.facebook.com">
-//                 <i className="fab fa-facebook-square" />
-//                 </a>
-//             </Footer.SocialShareItem>
-//             <Footer.SocialShareItem>
-//                 <a target="_blank" href="https://twitter.com">
-//                 <i className="fab fa-twitter" />
-//                 </a>
-//             </Footer.SocialShareItem>
-//             <Footer.SocialShareItem>
-//                 <a target="_blank" href="https://www.instagram.com">
-//                 <i className="fab fa-instagram" />
-//                 </a>
-//             </Footer.SocialShareItem>
-//             <Footer.SocialShareItem>
-//                 <a target="_blank" href="https://www.linkedin.com">
-//                 <i className="fab fa-linkedin" />
-//                 </a>
-//             </Footer.SocialShareItem>
-//         </Footer.SocialShare>
-//         </Footer.Copyright>
-//     </Container>
-//     </Footer>
-// )
-// }
 
 import React from "react";
 import Link from "next/link";
@@ -138,14 +5,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import Footer from "./style";
 import LogoWhite from "~image/logo/logo-white.png";
 
-export default function FooterOne() {
+export default function FooterOne({ id }) {
   return (
-    <Footer backgroundColor="#020617">
+    <Footer id={id} backgroundColor="#1a1a2e">
       <Container>
         <Footer.Box pbXL="40px">
           <Row className="gy-5">
             {/* Brand + description + contact */}
-            <Col xs={12} md={4}>
+            <Col xs={12} md={3} style={{ paddingRight: "30px" }}>
               <Footer.Widgets className="footer-widgets footer-widgets--mmr">
                 <Footer.BrandRow>
                   <Footer.LogoWrapper>
@@ -217,7 +84,7 @@ export default function FooterOne() {
             </Col>
 
             {/* About */}
-            <Col xs={6} md={2}>
+            <Col xs={6} md={3}>
               <Footer.Widgets>
                 <Footer.Title>About</Footer.Title>
                 <Footer.List>

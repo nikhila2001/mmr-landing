@@ -79,8 +79,9 @@ export const LogoWrapper = styled.div`
       height: 96px;
     }
   }
-
-    @keyframes floatUpDown {
+   animation: floatUpDown 3.5s ease-in-out infinite;
+  
+  @keyframes floatUpDown {
     0% {
       transform: translateY(0px);
     }
@@ -91,6 +92,7 @@ export const LogoWrapper = styled.div`
       transform: translateY(0px);
     }
   }
+
 `;
 
 export const Title = styled.h2`
@@ -216,7 +218,7 @@ export const NewsletterWrapper = styled.div`
 export const NewsletterTitle = styled.p`
   color: #ffffff;
   margin-bottom: 16px;
-  font-size: 15px;
+  font-size: 16px;
 `;
 
 export const EmailForm = styled.form`
@@ -251,8 +253,10 @@ export const EmailInput = styled.input`
   border-radius: 14px;
   border: none;
   outline: none;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #0000;
+  color:#0a0a0a;
+  align-items:center;
 
   &:focus {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);

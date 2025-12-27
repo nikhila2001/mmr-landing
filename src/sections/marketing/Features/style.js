@@ -69,9 +69,9 @@ Feature.Text = styled(Paragraph)`
     }
 `
 
-Feature.Tab  = styled(Box).attrs(props => ({
-    className:"row"
-  }))`
+Feature.Tab = styled(Box).attrs(props => ({
+    className: "row"
+}))`
     .nav{
         display:flex;
         /* justify-content:center; */
@@ -102,23 +102,18 @@ Feature.TabNavWrapper = styled(Box)`
     }
 `
 Feature.Box = styled(Box)`
-text-align:center;
+text-align:start;
 `
 Feature.Icon = styled(Box)`
-        min-width: 60px;
-        max-width: 60px;
-        min-height: 60px;
-        max-height: 60px;
-        border-radius: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        font-weight: 400;
-        color: #fff;
-        margin-bottom: 16px;
-        background:${props => props.background};
-        box-shadow:  ${props => props.background ? "-12px 12px 50px " + rgba(props.background,.3): "none"};`
+  width: 64px;
+  height: 64px;
+  border-radius: 16px; /* rounded-2xl */
+  background: linear-gradient(135deg, #2b9fe8, #6cc4f0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem; /* mb-6 */`
 
 Feature.Wrapper = styled.div`
  max-width: 520px;

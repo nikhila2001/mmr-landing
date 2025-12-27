@@ -26,11 +26,9 @@ import {
   NotifyButton,
 } from "./style";
 
-import LogoWhite from "~image/logo/logo-white.png"; // change if you have a dedicated app icon
-
-const ContactSection = () => {
+const ContactSection = ({ id }) => {
   return (
-    <DownloadWrapper id="download">
+    <DownloadWrapper id={id}>
       <BlurCircleLeft />
       <BlurCircleRight />
 
@@ -38,7 +36,7 @@ const ContactSection = () => {
         <DownloadInner>
           {/* Logo */}
           <LogoWrapper>
-            <img src={'/image/logo/mmr-logo.png'} alt="MMR Logo" />
+            <img src={"/image/logo/mmr-logo.png"} alt="MMR Logo" />
           </LogoWrapper>
 
           {/* Heading */}
@@ -117,13 +115,17 @@ const ContactSection = () => {
                   // row 8
                   "00101010",
                 ].map((row, rowIndex) =>
-                  row.split("").map((val, colIndex) => (
-                    <QRDot key={`${rowIndex}-${colIndex}`} dark={val === "1"} />
-                  ))
+                  row
+                    .split("")
+                    .map((val, colIndex) => (
+                      <QRDot
+                        key={`${rowIndex}-${colIndex}`}
+                        dark={val === "1"}
+                      />
+                    ))
                 )}
               </QRGrid>
-                          <ScanText>Scan to download</ScanText>
-
+              <ScanText>Scan to download</ScanText>
             </QRBox>
           </QRCard>
 

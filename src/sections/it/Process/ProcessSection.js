@@ -42,13 +42,10 @@ import {
   Title,
   Highlight,
   Subtitle,
-  Timeline,
   StepCircle,
   Line,
-  Arrow,
   Cards,
   Card,
-  IconBox,
   CardTitle,
   CardText,
   ActionButton,
@@ -60,11 +57,11 @@ import {
 import { FaArrowRight } from "react-icons/fa6";
 import { FiUserPlus } from "react-icons/fi";
 import { FiUpload } from "react-icons/fi";
-import { CiShare2 } from "react-icons/ci";
+import { IoShareSocialOutline } from "react-icons/io5";
 
-export default function ProcessSection() {
+export default function ProcessSection({ id }) {
   return (
-    <Section>
+    <Section id={id}>
       <Container>
         {/* Header */}
         <Header>
@@ -77,55 +74,55 @@ export default function ProcessSection() {
         </Header>
 
         <StepsSection>
-  {/* Circles + Line */}
-  <TopRow>
-    <CircleRow>
-      <StepCircle>01</StepCircle>
-      <StepCircle>02</StepCircle>
-      <StepCircle>03</StepCircle>
-    </CircleRow>
+          {/* Circles + Line */}
+          <TopRow>
+            <CircleRow>
+              <StepCircle>01</StepCircle>
+              <StepCircle>02</StepCircle>
+              <StepCircle>03</StepCircle>
+            </CircleRow>
 
-    <Line />
-  </TopRow>
+            <Line />
+          </TopRow>
 
-  {/* Cards */}
-  <Cards>
-    <Card>
-      <CardIcon>
-        <FiUserPlus size={28} strokeWidth={2} />
-      </CardIcon>
-      <CardTitle>Sign Up with Email</CardTitle>
-      <CardText>
-        Create your account in seconds with just your email. No government ID required.
-      </CardText>
-    </Card>
+          {/* Cards */}
+          <Cards>
+            <Card>
+              <CardIcon>
+                <FiUserPlus size={28} strokeWidth={2} />
+              </CardIcon>
+              <CardTitle>Sign Up with Email</CardTitle>
+              <CardText>
+                Create your account in seconds with just your email. No government ID required.
+              </CardText>
+            </Card>
 
-    <Card>
-            <CardIcon>
-              <FiUpload size={28} strokeWidth={2} />
-            </CardIcon>
+            <Card>
+              <CardIcon>
+                <FiUpload size={28} strokeWidth={2} />
+              </CardIcon>
 
-      <CardTitle>Upload Your Records</CardTitle>
-      <CardText>
-        Take photos of prescriptions, reports, or bills. Our AI organizes everything automatically.
-      </CardText>
-    </Card>
+              <CardTitle>Upload Your Records</CardTitle>
+              <CardText>
+                Take photos of prescriptions, reports, or bills. Our AI organizes everything automatically.
+              </CardText>
+            </Card>
 
-    <Card>
-            <CardIcon>
-              <CiShare2 size={28} strokeWidth={2} />  
-            </CardIcon>
+            <Card>
+              <CardIcon>
+                <IoShareSocialOutline size={28} strokeWidth={2} />
+              </CardIcon>
 
-      <CardTitle>Access Anywhere, Share Securely</CardTitle>
-      <CardText>
-        View your records anytime, anywhere. Share with doctors using secure time-limited links.
-      </CardText>
-    </Card>
-  </Cards>
-</StepsSection>
+              <CardTitle>Access Anywhere, Share Securely</CardTitle>
+              <CardText>
+                View your records anytime, anywhere. Share with doctors using secure time-limited links.
+              </CardText>
+            </Card>
+          </Cards>
+        </StepsSection>
 
         <ActionButton className="">Get Started Now
-          <span style={{ marginLeft:"16px"}}><FaArrowRight/></span>
+          <span style={{ marginLeft: "14px" }}><FaArrowRight /></span>
         </ActionButton>
       </Container>
     </Section>

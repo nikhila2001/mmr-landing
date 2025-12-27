@@ -14,36 +14,36 @@ import {
 } from './style';
 import Testimonial from "../../app/Testimonial/style"
 
-const ComparisonTable = () => {
+const ComparisonTable = ({ id }) => {
   return (
-    <ComparisonWrapper>
+    <ComparisonWrapper id={id}>
       <Container>
-           <Row className="justify-content-center text-center">
-                  <Col xs="12" lg="10" xl="9" xxl="7">
-                    <Testimonial.Box mbLG="55px" mbSM="30px">
-                      <Testimonial.Title as="h2" mb="16px">
-                        Why Choose{" "}
-                        <span>MMR</span>
-                      </Testimonial.Title>
-        
-                      <Testimonial.Subtitle as="h6">
-                        Compare MMR with traditional health record systems
-                      </Testimonial.Subtitle>
-                    </Testimonial.Box>
-                  </Col>
-                </Row>
+        <Row className="justify-content-center text-center">
+          <Col xs="12" lg="10" xl="9" xxl="7">
+            <Testimonial.Box mbLG="64px" mbSM="30px">
+              <Testimonial.Title as="h2" mb="16px">
+                Why Choose{" "}
+                <span>MMR</span>?
+              </Testimonial.Title>
+
+              <Testimonial.Subtitle style={{ color: "#4a5565" }}>
+                Compare MMR with traditional health record systems
+              </Testimonial.Subtitle>
+            </Testimonial.Box>
+          </Col>
+        </Row>
         <TableBox>
           {/* Header Row */}
           <Row className="table-row header-row">
             <HeaderCell className="col-3">Feature</HeaderCell>
 
             <HeaderCell className="col-3 text-center">
-              <div style={{ display:"flex", flexDirection:"column", alignItems:"center"}}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <span>MMR</span>
                 <Pill className="pill">Privacy First</Pill>
 
               </div>
-     
+
             </HeaderCell>
 
             <HeaderCell className="col-3">ABHA-linked Apps</HeaderCell>
@@ -109,7 +109,7 @@ const ComparisonTable = () => {
           </TableRow>
 
           {/* Continue similarly for all rows... */}
-             {/* 4 */}
+          {/* 4 */}
           <TableRow className="table-row">
             <FeatureCell className="col-3">Multi-language Support</FeatureCell>
             <ValueCell className="col-3">
@@ -123,7 +123,7 @@ const ComparisonTable = () => {
             </ValueCell>
           </TableRow>
 
-             {/* 4 */}
+          {/* 4 */}
           <TableRow className="table-row">
             <FeatureCell className="col-3">Doctor Acceptance</FeatureCell>
             <ValueCell className="col-3">
@@ -137,7 +137,7 @@ const ComparisonTable = () => {
             </ValueCell>
           </TableRow>
 
-             {/* 4 */}
+          {/* 4 */}
           <TableRow className="table-row">
             <FeatureCell className="col-3">Search & Organization</FeatureCell>
             <ValueCell className="col-3">
@@ -151,7 +151,7 @@ const ComparisonTable = () => {
             </ValueCell>
           </TableRow>
 
-             {/* 4 */}
+          {/* 4 */}
           <TableRow className="table-row">
             <FeatureCell className="col-3">Data Security</FeatureCell>
             <ValueCell className="col-3">
