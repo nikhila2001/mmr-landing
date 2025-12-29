@@ -65,7 +65,7 @@ const FeatureSection = ({ id, ...rest }) => {
               </Feature.Text>
             </Feature.Box>
           </Col>
-          <ImageSection src={'/image/logo/doctor.jpeg'} />
+          <ImageSection src={'/image/home/doctor.jfif'} />
         </Row>
 
         <Row className="align-items-center justify-content-center g-5" style={{ marginBottom: "90px" }}>
@@ -109,7 +109,7 @@ const FeatureSection = ({ id, ...rest }) => {
               </Feature.Text>
             </Feature.Box>
           </Col>
-          <ImageSection src={'/image/logo/doctor.jpeg'} />
+          <ImageSection src={'/image/home/doctor.jfif'} />
         </Row>
       </Container>
     </Feature>

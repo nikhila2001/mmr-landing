@@ -61,9 +61,6 @@ Hero.Buttons = styled(Box)`
    gap:16px;
    margin-bottom:32px !important;
    
-  .btn {
-    margin-right: 18px;
-  }
 `;
 Hero.Video = styled(Box)`
   box-shadow: 0 10px 56px rgba(0, 0, 0, 0.2);
@@ -100,10 +97,13 @@ Hero.Button = styled(Button)`
   font-size: 14px;
   transition: 0.4s;
   border-radius: 14px;
+  font-weight:400;
+
+
   &.btn-2 {
   color:#2b9fe8;
   border-radius: 14px;
-  border: 2px solid #2b9fe8;
+  border: 1px solid #2b9fe8;
   &:hover {
   background-color: #2b9fe8;
   color:#fff;

@@ -3,7 +3,9 @@
 //--- Theme Typography
 //-------------------------
 $enable-responsive-font-sizes: true;
-$font-family-base:            'Rubik', sans-serif;
+$font-family-base:   ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 
 //custom font-family
 $btn-font-family: $font-family-base;
