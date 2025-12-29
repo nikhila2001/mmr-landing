@@ -40,5 +40,4 @@ module.exports = {
     unoptimized: true,
     // If later you use a real image CDN/loader, you can change this
   },
-   output: 'export',
 };
