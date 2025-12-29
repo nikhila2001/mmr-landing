@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Blog from "./style";
 import BlogCard from "./Comonent/Card";
 import BlogRequlerData from "~data/BlogRequlerData";
-import BlogsImg1 from "/image/blogs/blog-post-1.png";
+// import BlogsImg1 from "/image/blogs/blog-post-1.png";
 import Sidebar from "~sections/Blog/Sidebar";
 export default function BlogRegular() {
   return (
@@ -30,7 +30,7 @@ export default function BlogRegular() {
             <Row className="justify-content-xl-center">
               <Col xs="12" className="col-xl-12 col-lg-9 col-md-12">
                 <BlogCard
-                  image={BlogsImg1}
+                  image="/image/blogs/blog-post-1.png"
                   badge="Gadgets"
                   date="01 June, 2020"
                   title="We can blend colors multiple ways, the most common"

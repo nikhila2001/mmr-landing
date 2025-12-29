@@ -1,7 +1,7 @@
 import { Link } from '~components'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import LogoWhite from "/image/logo/logo-white.png";
+// import LogoWhite from "/image/logo/logo-white.png";
 import Footer from "./style"
 export default function FooterSection(){
 return(
@@ -14,7 +14,7 @@ return(
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                     <Link  to="#">
-                        <img src={LogoWhite.src} alt="logo" />
+                        <img src={"/image/logo/logo-white.png"} alt="logo" />
                     </Link>
                 </Footer.Box>
                 <Footer.Text mb="36px">
