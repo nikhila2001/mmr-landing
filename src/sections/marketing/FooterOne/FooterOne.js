@@ -162,7 +162,7 @@ export default function FooterOne({ id }) {
                 <Footer.Title>Legal</Footer.Title>
                 <Footer.List>
                   <Footer.ListItems>
-                    <a href="#privacy">
+                    <a href="/privacy">
                       <span className="icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +183,7 @@ export default function FooterOne({ id }) {
                   </Footer.ListItems>
 
                   <Footer.ListItems>
-                    <a href="#terms">
+                    <a href="/terms">
                       <span className="icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

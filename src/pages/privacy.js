@@ -11,7 +11,7 @@ const header = {
 
 export default function TermsAndConditions() {
   return (
-    <PageWrapper headerConfig={header} innerPage={true}>
+    <PageWrapper innerPage={true}>
         <TermsConditionSection/>
         {/* <FooterSection/> */}
         <FooterOne id="footer" />

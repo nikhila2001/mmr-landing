@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Box, Button, Heading,Paragraph } from '~styled';
-import cardshape from "/image/it-services/services-more-shape.png"
+// import cardshape from "/image/it-services/services-more-shape.png"
 import {transparentize,rgba} from "polished"
 
 const propToColor = (arg = "#1787FC" ) => transparentize(0.70, arg);
@@ -29,7 +29,7 @@ const Card = styled(Box)`
     }
     &:before {
     content: "";
-    background-image: url(${cardshape.src});
+    background-image: url(${"/image/it-services/services-more-shape.png"});
     position: absolute;
     top: 0;
     z-index: 0;

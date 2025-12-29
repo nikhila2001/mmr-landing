@@ -1,6 +1,6 @@
 import React from "react";
 // import Image from "next/image";
-import AboutImage from "/image/mixed/career-video-bg.png";
+// import AboutImage from "/image/mixed/career-video-bg.png";
 import { Col, Container, Row } from "react-bootstrap";
 import About from "./style";
 import SectionTitle from "./Components/SectionTitle";
@@ -33,7 +33,7 @@ export default function AboutSection() {
             className="col-xl-7 col-lg-6 col-md-8 col-xs-11 order-1 order-lg-2"
           >
             <About.Image>
-              <img src={AboutImage.src} alt="content" class="w-100"/>
+              <img src={"/image/mixed/career-video-bg.png"} alt="content" class="w-100"/>
               <Video id="LWZ7iytIA6k" className="video-btn sonar-emitter">
                 {" "}
                 <i className="fa fa-play" />{" "}

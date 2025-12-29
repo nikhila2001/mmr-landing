@@ -1,7 +1,7 @@
 import React from "react";
 import BreadCrumb from "./style";
 import Image from "next/image";
-import BannerShape from "/image/mixed/inner-banner-shape.png";
+// import BannerShape from "/image/mixed/inner-banner-shape.png";
 import { Col, Row, Container } from "react-bootstrap";
 import { SuperTag } from "~components";
 export default function BreadCrumbSection({
@@ -23,7 +23,7 @@ export default function BreadCrumbSection({
         </Row>
       </Container>
       <BreadCrumb.Image>
-        <img src={BannerShape.src} alt="content" />
+        <img src={"/image/mixed/inner-banner-shape.png"} alt="content" />
       </BreadCrumb.Image>
     </BreadCrumb>
   );

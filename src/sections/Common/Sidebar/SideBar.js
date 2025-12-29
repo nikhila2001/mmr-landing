@@ -1,6 +1,6 @@
 import React from "react";
 // import Image from "next/image";
-import offerImage from "/image/mixed/ads-img.png";
+// import offerImage from "/image/mixed/ads-img.png";
 import SideBar from "./style";
 import { Link } from "~components";
 export default function SideBarSection() {
@@ -129,7 +129,7 @@ export default function SideBarSection() {
       {/* Single Widgets */}
       <SideBar.Ads>
         <Link to="#">
-          <img src={offerImage.src} alt="content" className="w-100" />
+          <img src={"/image/mixed/ads-img.png"} alt="content" className="w-100" />
         </Link>
       </SideBar.Ads>
       {/*/ .Single Widgets */}

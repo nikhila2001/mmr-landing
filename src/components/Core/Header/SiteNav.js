@@ -1,8 +1,13 @@
 import React from "react"
 import { Navbar } from "react-bootstrap"
 import Menu from "./Menu"
-const SiteNavbar = ({ buttonBlock, darkLogo, customLogo, defaultLogo }) => {
+import {useRouter} from "next/router";
 
+const SiteNavbar = ({ buttonBlock, darkLogo, customLogo, defaultLogo }) => {
+const router = useRouter();
+  const hideMenu =
+    router.pathname.includes("/terms") ||
+    router.pathname.includes("/privacy");
   return (
     <>
       <Navbar
@@ -12,7 +17,7 @@ const SiteNavbar = ({ buttonBlock, darkLogo, customLogo, defaultLogo }) => {
         variant="dark"
         className="site-navbar container-xl  px-0"
       >
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <div className="d-flex align-items-center gap-2">
             <img
               src={
@@ -47,7 +52,9 @@ const SiteNavbar = ({ buttonBlock, darkLogo, customLogo, defaultLogo }) => {
           aria-controls="responsive-navbar-nav"
           className="hamburgur"
         />
-        <Menu />
+        {!hideMenu && (
+          <Menu />
+        )}
         {buttonBlock}
       </Navbar>
     </>

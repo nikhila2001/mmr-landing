@@ -1,12 +1,12 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Video from '~components/VideoModal'
-import herol5Img from "/image/home-agency/hero-l5-bg.jpg";
-import herol5ImgOverlay from "/image/home-agency/hero-bg-overlay.png";
+// import herol5Img from "/image/home-agency/hero-l5-bg.jpg";
+// import herol5ImgOverlay from "/image/home-agency/hero-bg-overlay.png";
  import Hero from "./style"
 export default function HeroSection(){
 return(
-<Hero backgroundImage={herol5Img.src} backgroundOverlay={herol5ImgOverlay.src}>
+<Hero backgroundImage={"/image/home-agency/hero-l5-bg.jpg"} backgroundOverlay={"/image/home-agency/hero-bg-overlay.png"}>
   <Container>
     <Row className="align-items-center justify-content-center justify-content-md-start">
       <Col className="col-xxl-6 col-xl-7 col-lg-8 col-md-8 col-xs-11 order-2 order-lg-1">

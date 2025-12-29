@@ -1,11 +1,11 @@
 import React from "react";
 import Cta from "./style";
 import { Col, Container, Row } from "react-bootstrap";
-import ctal5Img from "/image/home-agency/promo-l5-img.png";
+// import ctal5Img from "/image/home-agency/promo-l5-img.png";
 
 export default function CtaSection({ ...rest }) {
   return (
-    <Cta backgroundImage={ctal5Img.src}>
+    <Cta backgroundImage={"/image/home-agency/promo-l5-img.png"}>
       <Container>
         <Row className="justify-content-center">
           <Col className="col-xl-6 col-lg-8 col-md-10">

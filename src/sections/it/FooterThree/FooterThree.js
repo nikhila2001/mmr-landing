@@ -1,5 +1,5 @@
 import { Link } from '~components'
-import LogoBlack from "/image/logo/logo-black.png";
+// import LogoBlack from "/image/logo/logo-black.png";
 import React from 'react';
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-bootstrap' 
@@ -15,7 +15,7 @@ return(
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                     <Link  to="/">
-                        <img src={LogoBlack} alt="logo" />
+                        <img src={"/image/logo/logo-black.png"} alt="logo" />
                     </Link>
                 </Footer.Box>
                 <Footer.Text mb="36px">
