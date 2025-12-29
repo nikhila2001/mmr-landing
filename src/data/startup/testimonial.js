@@ -1,11 +1,11 @@
-import testiMonialUserImg1 from "/image/it-services/user-circle-1.png";
-import testiMonialUserImg2 from "/image/it-services/user-circle-2.png";
-import testiMonialUserImg3 from "/image/it-services/user-circle-3.png";
+// import testiMonialUserImg1 from "/image/it-services/user-circle-1.png";
+// import testiMonialUserImg2 from "/image/it-services/user-circle-2.png";
+// import testiMonialUserImg3 from "/image/it-services/user-circle-3.png";
 const TestimonialData = {
   testimonial: [
     {
       id: "ts1",
-      image: testiMonialUserImg1,
+      image: "/image/it-services/user-circle-1.png",
       icon: "fa fa-quote-left",
       userName: "Design & Vreatives",
       userPosition: "One year with us",
@@ -13,7 +13,7 @@ const TestimonialData = {
     },
     {
       id: "ts2",
-      image: testiMonialUserImg2,
+      image: "/image/it-services/user-circle-2.png",
       icon: "fa fa-quote-left",
       userName: "John Doe",
       userPosition: "One year with us",
@@ -21,7 +21,7 @@ const TestimonialData = {
     },
     {
       id: "ts3",
-      image: testiMonialUserImg3,
+      image: "/image/it-services/user-circle-3.png",
       icon: "fa fa-quote-left",
       userName: "Charles Patterson",
       userPosition: "One year with us",
