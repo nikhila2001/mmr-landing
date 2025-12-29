@@ -3,23 +3,23 @@ import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap"
 import SectionTitle from './Components/SectionTitle'
 import Integration from "./style"
-import BrandLogoLine1 from "~image/brand-logo/brand-line-1.png";
-import BrandLogoLine2 from "~image/brand-logo/brand-line-2.png";
-import BrandLogoLine3 from "~image/brand-logo/brand-line-3.png";
-// import BrandLogoLine4 from "~image/brand-logo/brand-line-4.png";
-// import BrandLogoLine5 from "~image/brand-logo/brand-line-5.png";
-// import BrandLogoLine6 from "~image/brand-logo/brand-line-6.png";
-// import BrandLogoLine7 from "~image/brand-logo/brand-line-7.png";
-// import BrandLogoLine8 from "~image/brand-logo/brand-line-8.png";
-// import BrandLogo1 from "~image/brand-logo/brand-logo-1.png";
-// import BrandLogo2 from "~image/brand-logo/brand-logo-2.png";
-// import BrandLogo3 from "~image/brand-logo/brand-logo-3.png";
-// import BrandLogo4 from "~image/brand-logo/brand-logo-4.png";
-// import BrandLogo5 from "~image/brand-logo/brand-logo-5.png";
-// import BrandLogo6 from "~image/brand-logo/brand-logo-6.png";
-// import BrandLogo7 from "~image/brand-logo/brand-logo-7.png";
-// import BrandLogo8 from "~image/brand-logo/brand-logo-8.png";
-// import BrandLogo9 from "~image/brand-logo/brand-logo-9.png";
+import BrandLogoLine1 from "/image/brand-logo/brand-line-1.png";
+import BrandLogoLine2 from "/image/brand-logo/brand-line-2.png";
+import BrandLogoLine3 from "/image/brand-logo/brand-line-3.png";
+// import BrandLogoLine4 from "/image/brand-logo/brand-line-4.png";
+// import BrandLogoLine5 from "/image/brand-logo/brand-line-5.png";
+// import BrandLogoLine6 from "/image/brand-logo/brand-line-6.png";
+// import BrandLogoLine7 from "/image/brand-logo/brand-line-7.png";
+// import BrandLogoLine8 from "/image/brand-logo/brand-line-8.png";
+// import BrandLogo1 from "/image/brand-logo/brand-logo-1.png";
+// import BrandLogo2 from "/image/brand-logo/brand-logo-2.png";
+// import BrandLogo3 from "/image/brand-logo/brand-logo-3.png";
+// import BrandLogo4 from "/image/brand-logo/brand-logo-4.png";
+// import BrandLogo5 from "/image/brand-logo/brand-logo-5.png";
+// import BrandLogo6 from "/image/brand-logo/brand-logo-6.png";
+// import BrandLogo7 from "/image/brand-logo/brand-logo-7.png";
+// import BrandLogo8 from "/image/brand-logo/brand-logo-8.png";
+// import BrandLogo9 from "/image/brand-logo/brand-logo-9.png";
 
 const IntegrationSection = ({ ...rest }) => {
   return (

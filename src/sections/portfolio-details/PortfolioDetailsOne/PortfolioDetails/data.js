@@ -1,9 +1,9 @@
-import Pone from '~image/portfolio/portfolio-mas-1.jpg'
-import Ptwo from '~image/portfolio/portfolio-mas-2.jpg'
-import Pthree from '~image/portfolio/portfolio-mas-3.jpg'
-import Pfour from '~image/portfolio/portfolio-mas-6.jpg'
-import Pfive from '~image/portfolio/portfolio-mas-13.jpg'
-import Psix from '~image/portfolio/portfolio-mas-4.jpg'
+import Pone from '/image/portfolio/portfolio-mas-1.jpg'
+import Ptwo from '/image/portfolio/portfolio-mas-2.jpg'
+import Pthree from '/image/portfolio/portfolio-mas-3.jpg'
+import Pfour from '/image/portfolio/portfolio-mas-6.jpg'
+import Pfive from '/image/portfolio/portfolio-mas-13.jpg'
+import Psix from '/image/portfolio/portfolio-mas-4.jpg'
 
 const portfolioData = [
     {

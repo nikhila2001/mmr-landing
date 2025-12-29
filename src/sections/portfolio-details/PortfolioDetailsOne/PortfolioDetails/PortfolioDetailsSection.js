@@ -5,7 +5,7 @@ import PortfolioDetails from "./style"
 // import { StaticImage as Img } from "gatsby-plugin-image"
 import portfolioData from "./data"
 import ModalImage from "react-modal-image";
-import PortfolioDetailsLeft from "~image/portfolio/portfolio-details-left.jpg"
+import PortfolioDetailsLeft from "/image/portfolio/portfolio-details-left.jpg"
 
 const breakpointColumnsObj = {
   default: 2,

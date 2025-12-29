@@ -4,7 +4,7 @@ import Feature from './style'
 // import Image from 'next/image'
 import SectionTitle from './Components/SectionTitle'
 import CounterBlock from './Components/CounterBlock'
-import FeatureImage from "~image/it-services/feature-l3-image.png"
+import FeatureImage from "/image/it-services/feature-l3-image.png"
 export default function FeatureSection(){
 return(
 <Feature backgroundColor="#f3f4f6">

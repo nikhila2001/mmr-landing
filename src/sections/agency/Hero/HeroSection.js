@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Video from '~components/VideoModal'
-import herol5Img from "~image/home-agency/hero-l5-bg.jpg";
-import herol5ImgOverlay from "~image/home-agency/hero-bg-overlay.png";
+import herol5Img from "/image/home-agency/hero-l5-bg.jpg";
+import herol5ImgOverlay from "/image/home-agency/hero-bg-overlay.png";
  import Hero from "./style"
 export default function HeroSection(){
 return(

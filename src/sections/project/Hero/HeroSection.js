@@ -4,10 +4,10 @@ import Hero from './style'
 import { Col, Container, Row } from 'react-bootstrap';
 import { Form, Link } from '~components'
 import { SuperTag } from '~components';
-// import TitleShape from "~image/project-management/l2-hero-shape.png"
-// import HeroImage from "~image/project-management/l2-hero-image.png"
-import HeroShapeOne from "~image/project-management/l2-hero-shape-2.png"
-import HeroShapeTwo from "~image/project-management/l2-hero-shape-1.png"
+// import TitleShape from "/image/project-management/l2-hero-shape.png"
+// import HeroImage from "/image/project-management/l2-hero-image.png"
+import HeroShapeOne from "/image/project-management/l2-hero-shape-2.png"
+import HeroShapeTwo from "/image/project-management/l2-hero-shape-1.png"
 export default function HeroSection(){
   return(
 <Hero>

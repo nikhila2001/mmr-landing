@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "./style";
-import LogoWhite from "~image/logo/logo-white.png";
+import LogoWhite from "/image/logo/logo-white.png";
 
 export default function FooterOne({ id }) {
   return (

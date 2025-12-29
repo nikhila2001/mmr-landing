@@ -1,5 +1,5 @@
 import { Link } from '~components'
-import LogoBlack from "~image/logo/logo-black.png";
+import LogoBlack from "/image/logo/logo-black.png";
 import React from 'react';
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-bootstrap' 

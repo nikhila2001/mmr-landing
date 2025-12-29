@@ -4,11 +4,11 @@ import { Images } from "~data";
 import { Col, Container, Row } from "react-bootstrap";
 import TeamCard from "./Components/Card";
 import Team from "./style";
-import teamImg1 from "~image/home-digital-agency/team-member-1.png";
-import teamImg2 from "~image/home-digital-agency/team-member-2.png";
-import teamImg3 from "~image/home-digital-agency/team-member-3.png";
-import teamImg4 from "~image/home-digital-agency/team-member-4.png";
-import teamImg5 from "~image/home-digital-agency/team-member-5.png";
+import teamImg1 from "/image/home-digital-agency/team-member-1.png";
+import teamImg2 from "/image/home-digital-agency/team-member-2.png";
+import teamImg3 from "/image/home-digital-agency/team-member-3.png";
+import teamImg4 from "/image/home-digital-agency/team-member-4.png";
+import teamImg5 from "/image/home-digital-agency/team-member-5.png";
 export default function TeamSection({ ...rest }) {
   const elSlider = React.useRef();
 

@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 // import Image from 'next/image'
 import Content from './style'
 import SectionTitle from './Components/SectionTitle'
-import contentImage from '~image/home-agency/content-1-l5-img.png'
+import contentImage from '/image/home-agency/content-1-l5-img.png'
 export default function ContentSection(){
   return(
     <Content>

@@ -1,7 +1,7 @@
 import { Link } from '~components'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import LogoWhite from "~image/logo/logo-white.png";
+import LogoWhite from "/image/logo/logo-white.png";
 import Footer from "./style"
 export default function FooterSection(){
 return(

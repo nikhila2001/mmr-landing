@@ -1,6 +1,6 @@
 import React from "react";
 // import Image from "next/image";
-import AboutImage from "~image/mixed/career-video-bg.png";
+import AboutImage from "/image/mixed/career-video-bg.png";
 import { Col, Container, Row } from "react-bootstrap";
 import About from "./style";
 import SectionTitle from "./Components/SectionTitle";

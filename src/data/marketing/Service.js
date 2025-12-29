@@ -1,6 +1,6 @@
-// import servicesIcon1 from "~image/marketing/athletics.svg";
-// import servicesIcon2 from "~image/marketing/archery-target.svg";
-// import servicesIcon3 from "~image/marketing/money-coins.svg";
+// import servicesIcon1 from "/image/marketing/athletics.svg";
+// import servicesIcon2 from "/image/marketing/archery-target.svg";
+// import servicesIcon3 from "/image/marketing/money-coins.svg";
 const serviceData = {
     services: [
         {
