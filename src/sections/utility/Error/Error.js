@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "~components";
 import { Col, Container, Row } from "react-bootstrap";
 import ErrorPage from "./style";
-import errorImage from "/image/mixed/404.png";
+// import errorImage from "/image/mixed/404.png";
 export default function Error() {
   return (
     <ErrorPage backgroundColor="#f3f4f6">
@@ -10,7 +10,7 @@ export default function Error() {
         <Row className="justify-content-center">
           <Col xs="12" className="col-xl-6 col-lg-7 col-md-8 col-xs-10">
             <ErrorPage.Image className="error-page__image text-center">
-              <img className="w-100" src={errorImage.src} alt />
+              <img className="w-100" src="/image/mixed/404.png" alt />
             </ErrorPage.Image>
             <ErrorPage.BigTitle as="h1">404</ErrorPage.BigTitle>
             <ErrorPage.Title>Page not found</ErrorPage.Title>
