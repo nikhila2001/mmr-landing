@@ -1,6 +1,6 @@
 // import React from "react";
 import Head  from "next/head";
-import favicon from '~image/favicon.png';
+// import favicon from '~image/favicon.png';
 import Header from "../Header";
 export default function Layout({
   children,
@@ -9,7 +9,7 @@ export default function Layout({
     <>
       <Head>
             <title>Fastland Next Landing Template</title>
-            <link rel="icon" type="image/png" href={favicon.src} />
+            <link rel="icon" type="image/png" href="/image/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
       </Head>
         <Header/>

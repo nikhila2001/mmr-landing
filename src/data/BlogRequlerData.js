@@ -1,14 +1,14 @@
-import BlogsImg1 from "~image/blogs/blog-post-1.png";
-import BlogsImg2 from "~image/blogs/blog-post-2.png";
-import BlogsImg3 from "~image/blogs/blog-post-3.png";
-import BlogsImg4 from "~image/blogs/blog-post-4.png";
-import BlogsImg5 from "~image/blogs/blog-post-5.png";
-import BlogsImg6 from "~image/blogs/blog-post-6.png";
-import BlogsImg7 from "~image/blogs/blog-post-7.png";
+// import BlogsImg1 from "~image/blogs/blog-post-1.png";
+// import BlogsImg2 from "~image/blogs/blog-post-2.png";
+// import BlogsImg3 from "~image/blogs/blog-post-3.png";
+// import BlogsImg4 from "~image/blogs/blog-post-4.png";
+// import BlogsImg5 from "~image/blogs/blog-post-5.png";
+// import BlogsImg6 from "~image/blogs/blog-post-6.png";
+// import BlogsImg7 from "~image/blogs/blog-post-7.png";
 const BlogData = [
   {
     id: "bg1",
-    image: BlogsImg2,
+    image: "/image/blogs/blog-post-2.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -19,7 +19,7 @@ const BlogData = [
   },
   {
     id: "bg2",
-    image: BlogsImg3,
+    image: "/image/blogs/blog-post-3.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -30,7 +30,7 @@ const BlogData = [
   },
   {
     id: "bg3",
-    image: BlogsImg4,
+    image: "/image/blogs/blog-post-4.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -41,7 +41,7 @@ const BlogData = [
   },
   {
     id: "bg4",
-    image: BlogsImg5,
+    image: "/image/blogs/blog-post-5.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -52,7 +52,7 @@ const BlogData = [
   },
   {
     id: "bg5",
-    image: BlogsImg6,
+    image: "/image/blogs/blog-post-6.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -63,7 +63,7 @@ const BlogData = [
   },
   {
     id: "bg6",
-    image: BlogsImg7,
+    image: "/image/blogs/blog-post-6.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
