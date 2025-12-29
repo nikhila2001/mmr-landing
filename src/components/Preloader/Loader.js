@@ -13,11 +13,24 @@ const LoaderWrapper = styled.div`
       z-index: 9999;
       max-width: 150px;
     }
+    animation: floatUpDown 3.5s ease-in-out infinite;
+  
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-18px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 `
 const Loader = ({show}) => {
 return(
 <LoaderWrapper display={show ? "flex" : "none"}>
-    <img src="image/preloader.gif" alt="img"/>
+    <img src="image/logo/mmr-logo.png" alt="img"/>
 </LoaderWrapper>
 )
 }
