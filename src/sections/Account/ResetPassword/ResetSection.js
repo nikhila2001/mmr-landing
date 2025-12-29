@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ResetForm from "./style";
-import ResetBgImg from "/image/accounts/reset-pass-img.jpg";
+// import ResetBgImg from "/image/accounts/reset-pass-img.jpg";
 import { Link } from "~components";
 export default function ResetSection() {
   return (
@@ -9,7 +9,7 @@ export default function ResetSection() {
       <Container className="position-static">
         <Row className="align-items-center justify-content-center position-static">
           <Col xs="12" className="col-xl-6 col-lg-6 position-static">
-            <ResetForm.Image backgroundImage={ResetBgImg.src}></ResetForm.Image>
+            <ResetForm.Image backgroundImage={"/image/accounts/reset-pass-img.jpg"}></ResetForm.Image>
             c
           </Col>
           <Col xs="12" className="col-xxl-6 col-xl-6 col-lg-6 col-md-9">

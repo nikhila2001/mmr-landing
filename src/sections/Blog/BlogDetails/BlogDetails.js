@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "~components";
 import Details from "./style";
 import Image from "next/image";
-import blogImage from "/image/blogs/blog-details-img-1.png";
+// import blogImage from "/image/blogs/blog-details-img-1.png";
 import Sidebar from "~sections/Common/Sidebar";
 import {
   BlogQoute,
@@ -33,7 +33,7 @@ export default function BlogDetails() {
               </Details.Box>
               <Details.Box>
                 <Details.Image mb="35px" mbLG="55px">
-                  <img src={blogImage.src} alt="content" class="w-100" />
+                  <img src={"/image/blogs/blog-details-img-1.png"} alt="content" class="w-100" />
                 </Details.Image>
                 <Details.Text>
                   Doubling my 9–5 salary several times in my career is something
@@ -181,7 +181,6 @@ export default function BlogDetails() {
         </Container>
       </Details.Box>
       <Details.Box
-        pt="60px"
         pb="60px"
         pt="80px"
         pbMD="80px"

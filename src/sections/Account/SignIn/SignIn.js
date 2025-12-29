@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SignInForm from "./style";
-import SigninBgImg from "/image/accounts/sign-in.jpg";
+// import SigninBgImg from "/image/accounts/sign-in.jpg";
 export default function SignIn() {
   return (
     <SignInForm backgroundColor="#f3f4f6">
@@ -9,7 +9,7 @@ export default function SignIn() {
         <Row className="align-items-center justify-content-center position-static">
           <Col xs="12" className="col-xl-6 col-lg-5 position-static">
             <SignInForm.Image
-              backgroundImage={SigninBgImg.src}
+              backgroundImage={"/image/accounts/sign-in.jpg"}
             ></SignInForm.Image>
           </Col>
           <Col
