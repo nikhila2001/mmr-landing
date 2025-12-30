@@ -12,7 +12,7 @@ const FeatureSection = ({ id, ...rest }) => {
   return (
     <Feature id={id} className="bg-blue-ribbon">
       <Container>
-        <Row>
+        <Row className="scroll-fade">
           <Col xs="auto" className="col-xl-12 col-lg-10">
             <Feature.Box mb="64px">
               <Feature.Title fontColor="#1a1a2e">
@@ -24,7 +24,7 @@ const FeatureSection = ({ id, ...rest }) => {
             </Feature.Box>
           </Col>
         </Row>
-        <Row className="align-items-center justify-content-center g-5" style={{ marginBottom: "90px" }}>
+        <Row className="align-items-center justify-content-center g-5 scroll-fade" style={{ marginBottom: "90px" }}>
           <Col
             xs="12"
             className="col-xl-6 col-lg-7 col-md-10 order-2 order-xl-1 "
@@ -46,7 +46,7 @@ const FeatureSection = ({ id, ...rest }) => {
           <ImageSection src={'/image/movingMobile.jfif'} />
         </Row>
 
-        <Row className="align-items-center justify-content-center flex-row-reverse g-5" style={{ marginBottom: "90px" }}>
+        <Row className="align-items-center justify-content-center flex-row-reverse g-5 scroll-fade" style={{ marginBottom: "90px" }}>
           <Col
             xs="12"
             className="col-xl-6 col-lg-7 col-md-10 order-2 order-xl-1"
@@ -68,7 +68,7 @@ const FeatureSection = ({ id, ...rest }) => {
           <ImageSection src={'/image/home/doctor.jfif'} />
         </Row>
 
-        <Row className="align-items-center justify-content-center g-5" style={{ marginBottom: "90px" }}>
+        <Row className="align-items-center justify-content-center g-5 scroll-fade" style={{ marginBottom: "90px" }}>
           <Col
             xs="12"
             className="col-xl-6 col-lg-7 col-md-10 order-2 order-xl-1 "
@@ -90,7 +90,7 @@ const FeatureSection = ({ id, ...rest }) => {
           <ImageSection src={'/image/movingMobile.jfif'} />
         </Row>
 
-        <Row className="align-items-center justify-content-center flex-row-reverse g-5" style={{ marginBottom: "90px" }}>
+        <Row className="align-items-center justify-content-center flex-row-reverse g-5 scroll-fade" style={{ marginBottom: "90px" }}>
           <Col
             xs="12"
             className="col-xl-6 col-lg-7 col-md-10 order-2 order-xl-1 "

@@ -16,7 +16,7 @@ import Testimonial from "../../app/Testimonial/style"
 
 const ComparisonTable = ({ id }) => {
   return (
-    <ComparisonWrapper id={id}>
+    <ComparisonWrapper id={id} className="scroll-fade">
       <Container>
         <Row className="justify-content-center text-center">
           <Col xs="12" lg="10" xl="9" xxl="7">

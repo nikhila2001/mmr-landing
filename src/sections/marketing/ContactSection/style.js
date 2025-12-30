@@ -97,7 +97,7 @@ export const LogoWrapper = styled.div`
 
 export const Title = styled.h2`
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-size: 32px;
   color:white;
 

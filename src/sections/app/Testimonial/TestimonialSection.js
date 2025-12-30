@@ -23,7 +23,7 @@ const TestimonialSection = ({ id }) => {
   };
 
   return (
-    <Testimonial id={id}>
+    <Testimonial id={id} className="scroll-fade">
       <Container>
         {/* Heading */}
         <Row className="justify-content-center text-center">

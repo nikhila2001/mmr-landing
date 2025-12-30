@@ -61,7 +61,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 
 export default function ProcessSection({ id }) {
   return (
-    <Section id={id}>
+    <Section id={id} className="scroll-fade">
       <Container>
         {/* Header */}
         <Header>

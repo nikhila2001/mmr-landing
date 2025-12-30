@@ -28,7 +28,7 @@ import {
 
 const ContactSection = ({ id }) => {
   return (
-    <DownloadWrapper id={id}>
+    <DownloadWrapper id={id} className="scroll-fade">
       <BlurCircleLeft />
       <BlurCircleRight />
 

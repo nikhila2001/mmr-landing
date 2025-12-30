@@ -64,6 +64,7 @@ export const ValueCell = styled.div`
   display: flex;
   gap: 6px;
   align-items: center;
+  justify-content:center;
 `;
 
 export const Pill = styled.span`
@@ -72,8 +73,8 @@ export const Pill = styled.span`
   padding: 3px 10px;
   margin-top: 6px;
   border-radius: 12px;
-  background: #dff2ff;
-  color: #0284ff;
+  background: #ffffff33;
+  color: #fff;
   font-weight: 600;
   width: fit-content;
 `;

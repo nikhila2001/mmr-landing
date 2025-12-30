@@ -7,7 +7,7 @@ import { MdOutlineShield } from "react-icons/md";
 
 export default function ServicesSection({ id, ...rest }) {
   return (
-    <Service id={id} backgroundColor="" {...rest}>
+    <Service className="scroll-fade" id={id} backgroundColor="" {...rest}>
       <Container fluid>
         <Row className="text-center">
           <Col className="col-xxl-12 col-xl-7 col-md-9 col-sm-10">
@@ -20,7 +20,7 @@ export default function ServicesSection({ id, ...rest }) {
             </Service.Box>
           </Col>
         </Row>
-        <Row className="justify-content-center gap-md-8 gap-6">
+        <Row className="justify-content-center gap-md-8 gap-6 scroll-fade">
           {ServiceData.services.map(({ title, icon, text, id, iconBackground, shadowColor }) => {
             return (
               <Col
